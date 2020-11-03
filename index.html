@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <title>Kalkulator Windows</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="assets/css/fontello.css" type="text/css" />
+
+</head>
+<body>
+  <div class="container">
+      <input type="text" id="actual-history" class="actual-history" disabled>
+      <input type="text" class="number" id="number" value="0" disabled>
+
+      <div class="memory-div">
+        <button type="button" class="memory" id="MC">MC</button>
+        <button type="button" class="memory" id="MR">MR</button>
+        <button type="button" class="memory" id="MADD">M+</button>
+        <button type="button" class="memory" id="MSUB">M-</button>
+        <button type="button" class="memory" id="MS">MS</button>
+      </div>
+
+      <button type="button" class="btn-operator" id="percentage">%</button>
+      <button type="button" id="ce">CE</button>
+      <button type="button" id="c">C</button>
+      <button type="button" id="del"><=</button>
+
+      <button type="button" class="btn-operator" id="one-divide-x">1/x</button>
+      <button type="button" class="btn-operator" id="pow">x<sup>2</sup></button>
+      <button type="button" class="btn-operator" id="sqrt">√</button>
+      <button type="button" class="btn-operator" id="divide">&#xF7</button>
+
+      <button type="button" class="btn-number" id="seven">7</button>
+      <button type="button" class="btn-number" id="eight">8</button>
+      <button type="button" class="btn-number" id="nine">9</button>
+      <button type="button" class="btn-operator" id="multiply">&#215</button>
+
+      <button type="button" class="btn-number" id="four">4</button>
+      <button type="button" class="btn-number" id="five">5</button>
+      <button type="button" class="btn-number" id="six">6</button>
+      <button type="button" class="btn-operator" id="sub">-</button>
+
+      <button type="button" class="btn-number" id="one">1</button>
+      <button type="button" class="btn-number" id=two>2</button>
+      <button type="button" class="btn-number" id="three">3</button>
+      <button type="button" class="btn-operator" id="add">+</button>
+
+      <button type="button" class="btn-number" id="plus-minus">+/-</button>
+      <button type="button" class="btn-number" id="zero">0</button>
+      <button type="button" class="btn-number" id="comma">.</button>
+      <button type="button" class="btn-result" id="result">=</button>
+  </div>
+
+  <div class="div-history-memory">
+    <button type="button" class="btn-history-memory" id="btn-history">Historia</button>
+    <button type="button" class="btn-history-memory" id="btn-memory">Pamięć</button>
+    <textarea type="textarea" id="saved-history-memory" class="saved-history-memory" disabled></textarea>
+  </div>
+
+  <div class="del-history" id="del-history"><i class="icon-delete"></i></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
